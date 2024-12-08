@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>🎓 Quiz Bot</h1>
+        </header>
+        <main>
+            <!-- Category Selection -->
+            <div id="category-selection">
+                <h2>Select a Category</h2>
+                <ul id="categories" class="category-list"></ul>
+            </div>
+
+            <!-- Quiz Section -->
+            <div id="quiz-section" style="display: none;">
+                <h2 id="question" class="quiz-question"></h2>
+                <ul id="options" class="quiz-options"></ul>
+                <button id="next-btn" class="btn-primary" style="display: none;">Next</button>
+            </div>
+
+            <!-- Result Section -->
+            <div id="result-section" style="display: none;">
+                <h2>Your Score: <span id="score"></span></h2>
+                <button class="btn-primary" onclick="location.reload()">Restart Quiz</button>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>Created with ❤️ by <strong><a href="https://www.google.com/search?q=ADISHA2003" target="_blank" style="color: #fff; text-decoration: none;">ADISHA2003</a></strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
